@@ -12,6 +12,218 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Batter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delivery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Final"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnockOutMatch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Match"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonStriker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PointsTable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Striker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Umpire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Venue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#1stUmpire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2ndUmpire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3rdUmpire"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#batted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bowled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bowledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#facedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOfficiated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoints"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#played"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playedAt"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Batter"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowler"/>
+        <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Final"/>
+        <Class IRI="#Match"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupMatch"/>
+        <Class IRI="#Match"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnockOutMatch"/>
+        <Class IRI="#Match"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonStriker"/>
+        <Class IRI="#Batter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
+        <Class IRI="#Venue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Striker"/>
+        <Class IRI="#Batter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Umpire"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#1stUmpire"/>
+        <Class IRI="#Umpire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2ndUmpire"/>
+        <Class IRI="#Umpire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3rdUmpire"/>
+        <Class IRI="#Umpire"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Final"/>
+        <Class IRI="#GroupMatch"/>
+        <Class IRI="#KnockOutMatch"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#NonStriker"/>
+        <Class IRI="#Striker"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#batted"/>
+        <ObjectProperty IRI="#played"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bowled"/>
+        <ObjectProperty IRI="#played"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bowledBy"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#facedBy"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOfficiated"/>
+        <Class IRI="#Umpire"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPoints"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTeam"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#played"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playedAt"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bowledBy"/>
+        <Class IRI="#Bowler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#facedBy"/>
+        <Class IRI="#Striker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOfficiated"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPoints"/>
+        <Class IRI="#PointsTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTeam"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#played"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playedAt"/>
+        <Class IRI="#Venue"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 

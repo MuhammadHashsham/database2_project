@@ -16,13 +16,25 @@
         <Class IRI="#Batter"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Bowled"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Bowler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Caught"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Delivery"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DotBall"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Final"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstInning"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GroupMatch"/>
@@ -34,6 +46,9 @@
         <Class IRI="#KnockOutMatch"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#LBW"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Match"/>
     </Declaration>
     <Declaration>
@@ -49,10 +64,25 @@
         <Class IRI="#PointsTable"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RunOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Runs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondInning"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Stadium"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Striker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stumped"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Team"/>
@@ -62,6 +92,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Venue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wicket"/>
     </Declaration>
     <Declaration>
         <Class IRI="#1stUmpire"/>
@@ -82,16 +115,73 @@
         <ObjectProperty IRI="#bowledBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#deliveryBelongsToInning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliveryBelongsToMatch"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#facedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#firstInning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLosses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMatches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNetRunRate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasOfficiated"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPlayerOfTheMatch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlayerOut"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPoints"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasRanking"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRuns"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasTeam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWicketType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWinner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWinnerRuns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWinnerWickets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWins"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inningPlayed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inningTotal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#noResults"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#played"/>
@@ -99,17 +189,195 @@
     <Declaration>
         <ObjectProperty IRI="#playedAt"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#secondInning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#batter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bowler"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bowler_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#delivery_inning"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#delivery_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_inning_batting_team"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_inning_bowling_team"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_inning_score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#first_umpire"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#inning_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_city"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_umpire1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_umpire2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_venue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#match_winner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matches_lost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matches_played"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#matches_won"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#no_result"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#non_striker_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#player_dismissed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#player_of_the_match"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runs_scored"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#second_inning_score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#second_umpire"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stadium_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#striker_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team_net_run_rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team_points"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#team_ranking"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#third_umpire"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wicket_taken"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wicket_type_taken"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#winner_runs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#winner_wickets"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netherlands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewZealand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pakistan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SriLanka"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Batter"/>
         <Class IRI="#Player"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowled"/>
+        <Class IRI="#Wicket"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bowler"/>
         <Class IRI="#Player"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Caught"/>
+        <Class IRI="#Wicket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DotBall"/>
+        <Class IRI="#Delivery"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Final"/>
         <Class IRI="#Match"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstInning"/>
+        <Class IRI="#Inning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GroupMatch"/>
@@ -120,12 +388,28 @@
         <Class IRI="#Match"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LBW"/>
+        <Class IRI="#Wicket"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NonStriker"/>
         <Class IRI="#Batter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Player"/>
         <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RunOut"/>
+        <Class IRI="#Wicket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Runs"/>
+        <Class IRI="#Delivery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondInning"/>
+        <Class IRI="#Inning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stadium"/>
@@ -136,8 +420,16 @@
         <Class IRI="#Batter"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Stumped"/>
+        <Class IRI="#Wicket"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Umpire"/>
         <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wicket"/>
+        <Class IRI="#Delivery"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#1stUmpire"/>
@@ -152,14 +444,74 @@
         <Class IRI="#Umpire"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="#Bowled"/>
+        <Class IRI="#Caught"/>
+        <Class IRI="#LBW"/>
+        <Class IRI="#RunOut"/>
+        <Class IRI="#Stumped"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DotBall"/>
+        <Class IRI="#Runs"/>
+        <Class IRI="#Wicket"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Final"/>
         <Class IRI="#GroupMatch"/>
         <Class IRI="#KnockOutMatch"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#FirstInning"/>
+        <Class IRI="#SecondInning"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#NonStriker"/>
         <Class IRI="#Striker"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Country"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#batted"/>
         <ObjectProperty IRI="#played"/>
@@ -168,8 +520,44 @@
         <ObjectProperty IRI="#bowled"/>
         <ObjectProperty IRI="#played"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#firstInning"/>
+        <ObjectProperty IRI="#inningPlayed"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLosses"/>
+        <ObjectProperty IRI="#hasMatches"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWinnerRuns"/>
+        <ObjectProperty IRI="#hasWinner"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWinnerWickets"/>
+        <ObjectProperty IRI="#hasWinner"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWins"/>
+        <ObjectProperty IRI="#hasMatches"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#noResults"/>
+        <ObjectProperty IRI="#hasMatches"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#secondInning"/>
+        <ObjectProperty IRI="#inningPlayed"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#bowledBy"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveryBelongsToInning"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveryBelongsToMatch"/>
         <Class IRI="#Delivery"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -177,16 +565,72 @@
         <Class IRI="#Delivery"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDate"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLosses"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMatches"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNetRunRate"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOfficiated"/>
         <Class IRI="#Umpire"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlayerOfTheMatch"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlayerOut"/>
+        <Class IRI="#Delivery"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPoints"/>
         <Class IRI="#Team"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRanking"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRuns"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTeam"/>
         <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWicketType"/>
+        <Class IRI="#Delivery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWinner"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWins"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inningPlayed"/>
+        <Class IRI="#Inning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inningTotal"/>
+        <Class IRI="#Inning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#noResults"/>
+        <Class IRI="#Team"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#played"/>
@@ -201,20 +645,84 @@
         <Class IRI="#Bowler"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliveryBelongsToInning"/>
+        <Class IRI="#Inning"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliveryBelongsToMatch"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#facedBy"/>
         <Class IRI="#Striker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDate"/>
+        <Class IRI="#Match"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLosses"/>
+        <Class IRI="#PointsTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMatches"/>
+        <Class IRI="#PointsTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNetRunRate"/>
+        <Class IRI="#PointsTable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOfficiated"/>
         <Class IRI="#Match"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlayerOfTheMatch"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlayerOut"/>
+        <Class IRI="#Batter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPoints"/>
         <Class IRI="#PointsTable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRanking"/>
+        <Class IRI="#PointsTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRuns"/>
+        <Class IRI="#Runs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTeam"/>
         <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWicketType"/>
+        <Class IRI="#Wicket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWinner"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWins"/>
+        <Class IRI="#PointsTable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inningPlayed"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inningTotal"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#noResults"/>
+        <Class IRI="#PointsTable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#played"/>
@@ -224,6 +732,178 @@
         <ObjectProperty IRI="#playedAt"/>
         <Class IRI="#Venue"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#batter"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#bowler"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#bowler_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#city_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#delivery_inning"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#delivery_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#first_inning_batting_team"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#first_inning_bowling_team"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#first_inning_score"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#first_umpire"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#inning_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_city"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_type"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_umpire1"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_umpire2"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_venue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#match_winner"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#matches_lost"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#matches_played"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#matches_won"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#no_result"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#non_striker_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#player_dismissed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#player_of_the_match"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#runs_scored"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#second_inning_score"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#second_umpire"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#stadium_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#striker_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team1"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team2"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team_net_run_rate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team_points"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#team_ranking"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#third_umpire"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#wicket_taken"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#wicket_type_taken"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#winner_runs"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#winner_wickets"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="#team1"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
 </Ontology>
 
 

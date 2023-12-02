@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"points_table","startColumn":"A","endColumn":"A","startRow":"1","endRow":"+","comment":"","rule":"Individual: @B* Types: @B* Facts: hasMatches @C*, hasWins @D*, hasRanking @A*, hasNetRunRate @I*, hasPoints @H*, hasLosses@E*, noResults@G*","active":true}]}

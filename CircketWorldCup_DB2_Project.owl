@@ -34,9 +34,6 @@
         <Class IRI="#Final"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FirstInning"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#GroupMatch"/>
     </Declaration>
     <Declaration>
@@ -70,9 +67,6 @@
         <Class IRI="#Score"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SecondInning"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Stadium"/>
     </Declaration>
     <Declaration>
@@ -103,9 +97,6 @@
         <ObjectProperty IRI="#bowledBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#deliveryBelongsToInning"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#deliveryBelongsToMatch"/>
     </Declaration>
     <Declaration>
@@ -121,7 +112,7 @@
         <ObjectProperty IRI="#hasWinner"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#inningPlayed"/>
+        <ObjectProperty IRI="#inningPlayedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#played"/>
@@ -457,6 +448,9 @@
         <NamedIndividual IRI="#FazalhaqFarooqi"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FirstInning"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#GCoetzee"/>
     </Declaration>
     <Declaration>
@@ -473,6 +467,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HEVanDerDussen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HEVanderDussen"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#HHPandya"/>
@@ -592,6 +589,9 @@
         <NamedIndividual IRI="#LVVanBeek"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LVvanBeek"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#LitonDas"/>
     </Declaration>
     <Declaration>
@@ -635,6 +635,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MMAli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPODowd"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MPStoinis"/>
@@ -856,6 +859,9 @@
         <NamedIndividual IRI="#SaudShakeel"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#SecondInning"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#ShadabKhan"/>
     </Declaration>
     <Declaration>
@@ -959,9 +965,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#WankhedeStadium"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#bowler"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#striker"/>
@@ -2166,9 +2169,6 @@
     <Declaration>
         <NamedIndividual IRI="#9.9"/>
     </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#MPO&apos;Dowd"/>
-    </Declaration>
     <SubClassOf>
         <Class IRI="#Batter"/>
         <Class IRI="#Player"/>
@@ -2194,10 +2194,6 @@
         <Class IRI="#Match"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FirstInning"/>
-        <Class IRI="#Inning"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#GroupMatch"/>
         <Class IRI="#Match"/>
     </SubClassOf>
@@ -2220,10 +2216,6 @@
     <SubClassOf>
         <Class IRI="#Runs"/>
         <Class IRI="#Delivery"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SecondInning"/>
-        <Class IRI="#Inning"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stadium"/>
@@ -2269,10 +2261,6 @@
         <Class IRI="#Final"/>
         <Class IRI="#GroupMatch"/>
         <Class IRI="#KnockOutMatch"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#FirstInning"/>
-        <Class IRI="#SecondInning"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Batter"/>
@@ -2627,6 +2615,10 @@
         <NamedIndividual IRI="#FazalhaqFarooqi"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Inning"/>
+        <NamedIndividual IRI="#FirstInning"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Batter"/>
         <NamedIndividual IRI="#GCoetzee"/>
     </ClassAssertion>
@@ -2977,6 +2969,10 @@
     <ClassAssertion>
         <Class IRI="#Bowler"/>
         <NamedIndividual IRI="#MMAli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Batter"/>
+        <NamedIndividual IRI="#MPODowd"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Batter"/>
@@ -3391,6 +3387,10 @@
         <NamedIndividual IRI="#SaudShakeel"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Inning"/>
+        <NamedIndividual IRI="#SecondInning"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Batter"/>
         <NamedIndividual IRI="#ShadabKhan"/>
     </ClassAssertion>
@@ -3585,10 +3585,6 @@
     <ClassAssertion>
         <Class IRI="#Venue"/>
         <NamedIndividual IRI="#WankhedeStadium"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bowler"/>
-        <NamedIndividual IRI="#bowler"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Batter"/>
@@ -5194,10 +5190,21 @@
         <Class IRI="#Delivery"/>
         <NamedIndividual IRI="#9.9"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Batter"/>
-        <NamedIndividual IRI="#MPO&apos;Dowd"/>
-    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AAPAtkinson"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ADMathews"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ADutt"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#AGWharf"/>
@@ -5212,6 +5219,21 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#AGWharf"/>
         <NamedIndividual IRI="#SriLankaVsPakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AKMarkram"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ALPhehlukwayo"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ATCarey"/>
+        <NamedIndividual IRI="#Australia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5244,6 +5266,26 @@
         <NamedIndividual IRI="#SriLankaVsNewZealand"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ATNidamanuru"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AURashid"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AZampa"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AbdullahShafique"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#AfghanistanVsAustralia"/>
         <NamedIndividual IRI="#WankhedeStadium"/>
@@ -5267,6 +5309,11 @@
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#AfghanistanVsSouthAfrica"/>
         <NamedIndividual IRI="#NarendraModiStadium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AghaSalman"/>
+        <NamedIndividual IRI="#Pakistan"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5325,6 +5372,36 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
+        <NamedIndividual IRI="#AustraliaVsSouthAfrica"/>
+        <NamedIndividual IRI="#EdenGardens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#AzmatullahOmarzai"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#BAStokes"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#BFWDeLeede"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#BKGMendis"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#BabarAzam"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#BangladeshVsAustralia"/>
         <NamedIndividual IRI="#MaharashtraCricketAssociationStadium"/>
     </ObjectPropertyAssertion>
@@ -5342,6 +5419,11 @@
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#BangladeshVsPakistan"/>
         <NamedIndividual IRI="#EdenGardens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CAKRajitha"/>
+        <NamedIndividual IRI="#SriLanka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5374,6 +5456,21 @@
         <NamedIndividual IRI="#SriLankaVsPakistan"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CBRLSKumara"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CGreen"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CKarunaratne"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#CMBrown"/>
         <NamedIndividual IRI="#AfghanistanVsSouthAfrica"/>
@@ -5399,6 +5496,61 @@
         <NamedIndividual IRI="#PakistanVsNetherlands"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CNAckermann"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#CRWoakes"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DAMiller"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DAWarner"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DJMalan"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DJMitchell"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DJWilley"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DMDeSilva"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DMadushanka"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DNWellalage"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#DPConway"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#EnglandVsBangladesh"/>
         <NamedIndividual IRI="#HimachalPradeshCricketAssociationStadium"/>
@@ -5422,6 +5574,159 @@
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#EnglandVsSriLanka"/>
         <NamedIndividual IRI="#MChinnaswamyStadium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#FDMKarunaratne"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#FakharZaman"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#FazalhaqFarooqi"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inningPlayedBy"/>
+        <NamedIndividual IRI="#FirstInning"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#Afghanistan"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#Australia"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#Bangladesh"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#India"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#Netherlands"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#NewZealand"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#Pakistan"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#SouthAfrica"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#FirstInning"/>
+    <NamedIndividual IRI="#SriLanka"/>
+</ObjectPropertyAssertion>
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#Afghanistan"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#Australia"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#Bangladesh"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#England"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#India"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#Netherlands"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#NewZealand"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#Pakistan"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#SouthAfrica"/>
+</ObjectPropertyAssertion>
+
+<ObjectPropertyAssertion>
+    <ObjectProperty IRI="#inningPlayedBy"/>
+    <NamedIndividual IRI="#SecondInning"/>
+    <NamedIndividual IRI="#SriLanka"/>
+</ObjectPropertyAssertion>
+
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#GCoetzee"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#GDPhillips"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#GJMaxwell"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HCBrook"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5454,6 +5759,66 @@
         <NamedIndividual IRI="#SouthAfricaVsNewZealand"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HEVanderDussen"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HHPandya"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HKlaasen"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HarisRauf"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HasanAli"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HasanMahmud"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#HashmatullahShahidi"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ISSodhi"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#IbrahimZadran"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#IftikharAhmed"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#IkramAlikhil"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#Imam-ul-Haq"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#IndiaVsAustralia"/>
         <NamedIndividual IRI="#NarendraModiStadium"/>
@@ -5482,6 +5847,46 @@
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#IndiaVsSriLanka"/>
         <NamedIndividual IRI="#WankhedeStadium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#IshanKishan"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JCButtler"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JDSNeesham"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JERoot"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JJBumrah"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JMBairstow"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JPInglis"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#JRHazlewood"/>
+        <NamedIndividual IRI="#Australia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5524,6 +5929,71 @@
         <NamedIndividual IRI="#SriLankaVsNewZealand"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KAMaharaj"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KICAsalanka"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KLRahul"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KRabada"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KSWilliamson"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#KuldeepYadav"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LBWilliams"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LHFerguson"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LNgidi"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LSLivingstone"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LVvanBeek"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#LitonDas"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MADIHemantha"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#MAGough"/>
         <NamedIndividual IRI="#AfghanistanVsAustralia"/>
@@ -5547,6 +6017,26 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#MAGough"/>
         <NamedIndividual IRI="#NewZealandVsIndia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MAStarc"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MAWood"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MDKJPerera"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MDShanaka"/>
+        <NamedIndividual IRI="#SriLanka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5577,6 +6067,136 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#MErasmus"/>
         <NamedIndividual IRI="#SriLankaVsBangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MJHenry"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MJSantner"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MJansen"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MLabuschagne"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MMAli"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MPODowd"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MPathirana"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MRMarsh"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MSChapman"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MTheekshana"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MahediHasan"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#Mahmudullah"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MehediHasanMiraz"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammadNabi"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammadNawaz"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammadRizwan"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammadWasim"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammedShami"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MohammedSiraj"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MujeebUrRahman"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MushfiqurRahim"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#MustafizurRahman"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#NajibullahZadran"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#NasumAhmed"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#Naveen-ul-Haq"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#NazmulHossainShanto"/>
+        <NamedIndividual IRI="#Bangladesh"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
@@ -5654,6 +6274,26 @@
         <NamedIndividual IRI="#SouthAfricaVsEngland"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#NoorAhmad"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#PAVanMeekeren"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#PJCummins"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#PNissanka"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#PRReiffel"/>
         <NamedIndividual IRI="#AfghanistanVsIndia"/>
@@ -5682,6 +6322,11 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#PRReiffel"/>
         <NamedIndividual IRI="#PakistanVsSouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#PVDChameera"/>
+        <NamedIndividual IRI="#SriLanka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5729,6 +6374,16 @@
         <NamedIndividual IRI="#MAChidambaramStadium"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#QDeKock"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RAJadeja"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#RAKettleborough"/>
         <NamedIndividual IRI="#AustraliaVsIndia"/>
@@ -5764,6 +6419,21 @@
         <NamedIndividual IRI="#SouthAfricaVsAustralia"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RAshwin"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#REVanDerMerwe"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RGSharma"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#RJTucker"/>
         <NamedIndividual IRI="#AfghanistanVsEngland"/>
@@ -5797,6 +6467,11 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#RJTucker"/>
         <NamedIndividual IRI="#PakistanVsAfghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RJWTopley"/>
+        <NamedIndividual IRI="#England"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
@@ -5839,83 +6514,105 @@
         <NamedIndividual IRI="#SriLankaVsBangladesh"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#RahmanullahGurbaz"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#IbrahimZadran"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#RahmatShah"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#HashmatullahShahidi"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#NajibullahZadran"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#MohammadNabi"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#AzmatullahOmarzai"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#RashidKhan"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#MujeebUrRahman"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#Naveen-ul-Haq"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#FazalhaqFarooqi"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#IkramAlikhil"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
-<ObjectPropertyAssertion>
-    <ObjectProperty IRI="#hasTeam"/>
-    <NamedIndividual IRI="#NoorAhmad"/>
-    <NamedIndividual IRI="#Afghanistan"/>
-</ObjectPropertyAssertion>
-
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RKlein"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RRHendricks"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RRavindra"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RahmanullahGurbaz"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RahmatShah"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#RashidKhan"/>
+        <NamedIndividual IRI="#Afghanistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SAAbbott"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SAEdwards"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SAEngelbrecht"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SAYadav"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SMCurran"/>
+        <NamedIndividual IRI="#England"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SNThakur"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SPDSmith"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SSIyer"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SSamarawickrama"/>
+        <NamedIndividual IRI="#SriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SaqibZulfiqar"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SaudShakeel"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ShadabKhan"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ShaheenShahAfridi"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ShakibAlHasan"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#Sharfuddoula"/>
@@ -5940,6 +6637,21 @@
         <ObjectProperty IRI="#hasOfficiated"/>
         <NamedIndividual IRI="#Sharfuddoula"/>
         <NamedIndividual IRI="#SouthAfricaVsSriLanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#SharizAhmad"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ShorifulIslam"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#ShubmanGill"/>
+        <NamedIndividual IRI="#India"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playedAt"/>
@@ -5995,6 +6707,81 @@
         <ObjectProperty IRI="#playedAt"/>
         <NamedIndividual IRI="#SriLankaVsPakistan"/>
         <NamedIndividual IRI="#RajivGandhiInternationalStadium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TABoult"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TBavuma"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TGSouthee"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TMHead"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TShamsi"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TWMLatham"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TanzidHasan"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TanzimHasanSakib"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TaskinAhmed"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#TowhidHridoy"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#UsamaMir"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#VKohli"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#VikramjitSingh"/>
+        <NamedIndividual IRI="#Netherlands"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#WAYoung"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTeam"/>
+        <NamedIndividual IRI="#WBarresi"/>
+        <NamedIndividual IRI="#Netherlands"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#deliveryBelongsToMatch"/>
@@ -77998,10 +78785,6 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#bowledBy"/>
-        <Class IRI="#Delivery"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#deliveryBelongsToInning"/>
         <Class IRI="#Delivery"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -78025,7 +78808,7 @@
         <Class IRI="#Match"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#inningPlayed"/>
+        <ObjectProperty IRI="#inningPlayedBy"/>
         <Class IRI="#Inning"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -78039,10 +78822,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#bowledBy"/>
         <Class IRI="#Bowler"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#deliveryBelongsToInning"/>
-        <Class IRI="#Inning"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#deliveryBelongsToMatch"/>
@@ -78061,7 +78840,7 @@
         <Class IRI="#Team"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#inningPlayed"/>
+        <ObjectProperty IRI="#inningPlayedBy"/>
         <Class IRI="#Team"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -78277,10 +79056,6 @@
         <Class IRI="#Inning"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#first_inning_score"/>
-        <Class IRI="#FirstInning"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#first_umpire"/>
         <Class IRI="#1stUmpire"/>
     </DataPropertyDomain>
@@ -78355,10 +79130,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#runs_scored"/>
         <Class IRI="#Inning"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#second_inning_score"/>
-        <Class IRI="#SecondInning"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#second_umpire"/>

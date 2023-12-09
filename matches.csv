@@ -1,48 +1,49 @@
-season,team1,team2,date,match_number,venue,city,toss_winner,toss_decision,player_of_match,umpire1,umpire2,winner,winner_runs,winner_wickets,match_type
-2023/24,England,New Zealand,10/5/2023,1,Narendra Modi Stadium,Ahmedabad,New Zealand,field,R Ravindra,HDPK Dharmasena,Nitin Menon,New Zealand,,9,Group
-2023/24,Pakistan,Netherlands,10/6/2023,2,Rajiv Gandhi International Stadium,Hyderabad,Netherlands,field,Saud Shakeel,AT Holdstock,CM Brown,Pakistan,81,,Group
-2023/24,Afghanistan,Bangladesh,10/7/2023,3,Himachal Pradesh Cricket Association Stadium,Dharamsala,Bangladesh,field,Mehedi Hasan Miraz,JS Wilson,HDPK Dharmasena,Bangladesh,,6,Group
-2023/24,South Africa,Sri Lanka,10/7/2023,4,Arun Jaitley Stadium,Delhi,Sri Lanka,field,AK Markram,RK Illingworth,Sharfuddoula,South Africa,102,,Group
-2023/24,Australia,India,10/8/2023,5,MA Chidambaram Stadium,Chennai,Australia,bat,KL Rahul,CB Gaffaney,RA Kettleborough,India,,6,Group
-2023/24,New Zealand,Netherlands,10/9/2023,6,Rajiv Gandhi International Stadium,Hyderabad,Netherlands,field,MJ Santner,PR Reiffel,RJ Tucker,New Zealand,99,,Group
-2023/24,England,Bangladesh,10/10/2023,7,Himachal Pradesh Cricket Association Stadium,Dharamsala,Bangladesh,field,DJ Malan,Ahsan Raza,P Wilson,England,137,,Group
-2023/24,Sri Lanka,Pakistan,10/10/2023,8,Rajiv Gandhi International Stadium,Hyderabad,Sri Lanka,bat,Mohammad Rizwan,AG Wharf,CB Gaffaney,Pakistan,,6,Group
-2023/24,Afghanistan,India,10/11/2023,9,Arun Jaitley Stadium,Delhi,Afghanistan,bat,RG Sharma,MA Gough,PR Reiffel,India,,8,Group
-2023/24,South Africa,Australia,10/12/2023,10,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Australia,field,Q de Kock,JS Wilson,RK Illingworth,South Africa,134,,Group
-2023/24,Bangladesh,New Zealand,10/13/2023,11,MA Chidambaram Stadium,Chennai,New Zealand,field,LH Ferguson,HDPK Dharmasena,Nitin Menon,New Zealand,,8,Group
-2023/24,Pakistan,India,10/14/2023,12,Narendra Modi Stadium,Ahmedabad,India,field,JJ Bumrah,M Erasmus,RK Illingworth,India,,7,Group
-2023/24,Afghanistan,England,10/15/2023,13,Arun Jaitley Stadium,Delhi,England,field,Mujeeb Ur Rahman,RJ Tucker,Sharfuddoula,Afghanistan,69,,Group
-2023/24,Sri Lanka,Australia,10/16/2023,14,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Sri Lanka,bat,A Zampa,CB Gaffaney,JS Wilson,Australia,,5,Group
-2023/24,Netherlands,South Africa,10/17/2023,15,Himachal Pradesh Cricket Association Stadium,Dharamsala,South Africa,field,SA Edwards,MA Gough,RA Kettleborough,Netherlands,38,,Group
-2023/24,New Zealand,Afghanistan,10/18/2023,16,MA Chidambaram Stadium,Chennai,Afghanistan,field,GD Phillips,JS Wilson,P Wilson,New Zealand,149,,Group
-2023/24,Bangladesh,India,10/19/2023,17,Maharashtra Cricket Association Stadium,Pune,Bangladesh,bat,V Kohli,AT Holdstock,RA Kettleborough,India,,7,Group
-2023/24,Australia,Pakistan,10/20/2023,18,M Chinnaswamy Stadium,Bengaluru,Pakistan,field,DA Warner,CM Brown,RK Illingworth,Australia,62,,Group
-2023/24,Netherlands,Sri Lanka,10/21/2023,19,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Netherlands,bat,S Samarawickrama,Ahsan Raza,M Erasmus,Sri Lanka,,5,Group
-2023/24,South Africa,England,10/21/2023,20,Wankhede Stadium,Mumbai,England,field,H Klaasen,HDPK Dharmasena,Nitin Menon,South Africa,229,,Group
-2023/24,New Zealand,India,10/22/2023,21,Himachal Pradesh Cricket Association Stadium,Dharamsala,India,field,Mohammed Shami,AT Holdstock,MA Gough,India,,4,Group
-2023/24,Pakistan,Afghanistan,10/23/2023,22,MA Chidambaram Stadium,Chennai,Pakistan,bat,Ibrahim Zadran,PR Reiffel,RJ Tucker,Afghanistan,,8,Group
-2023/24,South Africa,Bangladesh,10/24/2023,23,Wankhede Stadium,Mumbai,South Africa,bat,Q de Kock,Ahsan Raza,JS Wilson,South Africa,149,,Group
-2023/24,Australia,Netherlands,10/25/2023,24,Arun Jaitley Stadium,Delhi,Australia,bat,GJ Maxwell,MA Gough,Sharfuddoula,Australia,309,,Group
-2023/24,England,Sri Lanka,10/26/2023,25,M Chinnaswamy Stadium,Bengaluru,England,bat,CBRLS Kumara,AT Holdstock,CM Brown,Sri Lanka,,8,Group
-2023/24,Pakistan,South Africa,10/27/2023,26,MA Chidambaram Stadium,Chennai,Pakistan,bat,T Shamsi,AG Wharf,PR Reiffel,South Africa,,1,Group
-2023/24,Australia,New Zealand,10/28/2023,27,Himachal Pradesh Cricket Association Stadium,Dharamsala,New Zealand,field,TM Head,M Erasmus,Sharfuddoula,Australia,5,,Group
-2023/24,Netherlands,Bangladesh,10/28/2023,28,Eden Gardens,Kolkata,Netherlands,bat,PA van Meekeren,JS Wilson,P Wilson,Netherlands,87,,Group
-2023/24,India,England,10/29/2023,29,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,England,field,RG Sharma,AT Holdstock,RJ Tucker,India,100,,Group
-2023/24,Sri Lanka,Afghanistan,10/30/2023,30,Maharashtra Cricket Association Stadium,Pune,Afghanistan,field,Fazalhaq Farooqi,CB Gaffaney,RK Illingworth,Afghanistan,,7,Group
-2023/24,Bangladesh,Pakistan,10/31/2023,31,Eden Gardens,Kolkata,Bangladesh,bat,Fakhar Zaman,Nitin Menon,RA Kettleborough,Pakistan,,7,Group
-2023/24,South Africa,New Zealand,11/1/2023,32,Maharashtra Cricket Association Stadium,Pune,New Zealand,field,HE van der Dussen,Ahsan Raza,HDPK Dharmasena,South Africa,190,,Group
-2023/24,India,Sri Lanka,11/2/2023,33,Wankhede Stadium,Mumbai,Sri Lanka,field,Mohammed Shami,CM Brown,PR Reiffel,India,302,,Group
-2023/24,Netherlands,Afghanistan,11/3/2023,34,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Netherlands,bat,Mohammad Nabi,Nitin Menon,Sharfuddoula,Afghanistan,,7,Group
-2023/24,New Zealand,Pakistan,11/4/2023,35,M Chinnaswamy Stadium,Bengaluru,Pakistan,field,Fakhar Zaman,P Wilson,RA Kettleborough,Pakistan,21,,Group
-2023/24,Australia,England,11/4/2023,36,Narendra Modi Stadium,Ahmedabad,England,field,A Zampa,CB Gaffaney,M Erasmus,Australia,33,,Group
-2023/24,India,South Africa,11/5/2023,37,Eden Gardens,Kolkata,India,bat,V Kohli,HDPK Dharmasena,PR Reiffel,India,243,,Group
-2023/24,Sri Lanka,Bangladesh,11/6/2023,38,Arun Jaitley Stadium,Delhi,Bangladesh,field,Shakib Al Hasan,M Erasmus,RK Illingworth,Bangladesh,,3,Group
-2023/24,Afghanistan,Australia,11/7/2023,39,Wankhede Stadium,Mumbai,Afghanistan,bat,GJ Maxwell,AG Wharf,MA Gough,Australia,,3,Group
-2023/24,England,Netherlands,11/8/2023,40,Maharashtra Cricket Association Stadium,Pune,England,bat,BA Stokes,Ahsan Raza,RJ Tucker,England,160,,Group
-2023/24,Sri Lanka,New Zealand,11/9/2023,41,M Chinnaswamy Stadium,Bengaluru,New Zealand,field,TA Boult,AT Holdstock,JS Wilson,New Zealand,,5,Group
-2023/24,Afghanistan,South Africa,11/10/2023,42,Narendra Modi Stadium,Ahmedabad,Afghanistan,bat,HE van der Dussen,CM Brown,Nitin Menon,South Africa,,5,Group
-2023/24,Bangladesh,Australia,11/11/2023,43,Maharashtra Cricket Association Stadium,Pune,Australia,field,MR Marsh,Ahsan Raza,M Erasmus,Australia,,8,Group
-2023/24,England,Pakistan,11/11/2023,44,Eden Gardens,Kolkata,England,bat,DJ Willey,P Wilson,RJ Tucker,England,93,,Group
-2023/24,India,New Zealand,11/15/2023,45,Wankhede Stadium,Mumbai,India,bat,Mohammed Shami,RK Illingworth,RJ Tucker,India,70,,Semi Final
-2023/24,South Africa,Australia,11/16/2023,46,Eden Gardens,Kolkata,South Africa,bat,TM Head,Nitin Menon,RA Kettleborough,Australia,,3,Semi Final
-2023/24,India,Australia,11/19/2023,47,Narendra Modi Stadium,Ahmedabad,Australia,field,TM Head,RK Illingworth,RA Kettleborough,Australia,,6,Final
+﻿match,team1,team2,match_date,match_number,match_venue,match_city,player_of_the_match,match_umpire1,match_umpire2,first_inning_score,second_inning_score,match_winner,winner_runs,winner_wickets,match_type
+EnglandVsNewZealand,England,NewZealand,10/5/2023,1,NarendraModiStadium,Ahmedabad,RRavindra,HDPKDharmasena,NitinMenon,282,283,NewZealand,0,9,Group
+PakistanVsNetherlands,Pakistan,Netherlands,10/6/2023,2,RajivGandhiInternationalStadium,Hyderabad,SaudShakeel,ATHoldstock,CMBrown,286,205,Pakistan,81,0,Group
+AfghanistanVsBangladesh,Afghanistan,Bangladesh,10/7/2023,3,HimachalPradeshCricketAssociationStadium,Dharamsala,MehediHasanMiraz,JSWilson,HDPKDharmasena,156,158,Bangladesh,0,6,Group
+SouthAfricaVsSriLanka,SouthAfrica,SriLanka,10/7/2023,4,ArunJaitleyStadium,Delhi,AKMarkram,RKIllingworth,Sharfuddoula,428,326,SouthAfrica,102,0,Group
+AustraliaVsIndia,Australia,India,10/8/2023,5,MAChidambaramStadium,Chennai,KLRahul,CBGaffaney,RAKettleborough,199,201,India,0,6,Group
+NewZealandVsNetherlands,NewZealand,Netherlands,10/9/2023,6,RajivGandhiInternationalStadium,Hyderabad,MJSantner,PRReiffel,RJTucker,322,223,NewZealand,99,0,Group
+EnglandVsBangladesh,England,Bangladesh,10/10/2023,7,HimachalPradeshCricketAssociationStadium,Dharamsala,DJMalan,AhsanRaza,PWilson,364,227,England,137,0,Group
+SriLankaVsPakistan,SriLanka,Pakistan,10/10/2023,8,RajivGandhiInternationalStadium,Hyderabad,MohammadRizwan,AGWharf,CBGaffaney,344,345,Pakistan,0,6,Group
+AfghanistanVsIndia,Afghanistan,India,10/11/2023,9,ArunJaitleyStadium,Delhi,RGSharma,MAGough,PRReiffel,272,273,India,0,8,Group
+SouthAfricaVsAustralia,SouthAfrica,Australia,10/12/2023,10,BharatRatnaShriAtalBihariVajpayeeEkanaCricketStadium,Lucknow,QdeKock,JSWilson,RKIllingworth,311,177,SouthAfrica,134,0,Group
+BangladeshVsNewZealand,Bangladesh,NewZealand,10/13/2023,11,MAChidambaramStadium,Chennai,LHFerguson,HDPKDharmasena,NitinMenon,245,248,NewZealand,0,8,Group
+PakistanVsIndia,Pakistan,India,10/14/2023,12,NarendraModiStadium,Ahmedabad,JJBumrah,MErasmus,RKIllingworth,191,192,India,0,7,Group
+AfghanistanVsEngland,Afghanistan,England,10/15/2023,13,ArunJaitleyStadium,Delhi,MujeebUrRahman,RJTucker,Sharfuddoula,284,215,Afghanistan,69,0,Group
+SriLankaVsAustralia,SriLanka,Australia,10/16/2023,14,BharatRatnaShriAtalBihariVajpayeeEkanaCricketStadium,Lucknow,AZampa,CBGaffaney,JSWilson,209,215,Australia,0,5,Group
+NetherlandsVsSouthAfrica,Netherlands,SouthAfrica,10/17/2023,15,HimachalPradeshCricketAssociationStadium,Dharamsala,SAEdwards,MAGough,RAKettleborough,245,207,Netherlands,38,0,Group
+NewZealandVsAfghanistan,NewZealand,Afghanistan,10/18/2023,16,MAChidambaramStadium,Chennai,GDPhillips,JSWilson,PWilson,288,139,NewZealand,149,0,Group
+BangladeshVsIndia,Bangladesh,India,10/19/2023,17,MaharashtraCricketAssociationStadium,Pune,VKohli,ATHoldstock,RAKettleborough,256,261,India,0,7,Group
+AustraliaVsPakistan,Australia,Pakistan,10/20/2023,18,MChinnaswamyStadium,Bengaluru,DAWarner,CMBrown,RKIllingworth,367,305,Australia,62,0,Group
+NetherlandsVsSriLanka,Netherlands,SriLanka,10/21/2023,19,BharatRatnaShriAtalBihariVajpayeeEkanaCricketStadium,Lucknow,SSamarawickrama,AhsanRaza,MErasmus,262,263,SriLanka,0,5,Group
+SouthAfricaVsEngland,SouthAfrica,England,10/21/2023,20,WankhedeStadium,Mumbai,HKlaasen,HDPKDharmasena,NitinMenon,399,170,SouthAfrica,229,0,Group
+NewZealandVsIndia,NewZealand,India,10/22/2023,21,HimachalPradeshCricketAssociationStadium,Dharamsala,MohammedShami,ATHoldstock,MAGough,273,274,India,0,4,Group
+PakistanVsAfghanistan,Pakistan,Afghanistan,10/23/2023,22,MAChidambaramStadium,Chennai,IbrahimZadran,PRReiffel,RJTucker,282,286,Afghanistan,0,8,Group
+SouthAfricaVsBangladesh,SouthAfrica,Bangladesh,10/24/2023,23,WankhedeStadium,Mumbai,QdeKock,AhsanRaza,JSWilson,382,233,SouthAfrica,149,0,Group
+AustraliaVsNetherlands,Australia,Netherlands,10/25/2023,24,ArunJaitleyStadium,Delhi,GJMaxwell,MAGough,Sharfuddoula,399,90,Australia,309,0,Group
+EnglandVsSriLanka,England,SriLanka,10/26/2023,25,MChinnaswamyStadium,Bengaluru,CBRLSKumara,ATHoldstock,CMBrown,156,160,SriLanka,0,8,Group
+PakistanVsSouthAfrica,Pakistan,SouthAfrica,10/27/2023,26,MAChidambaramStadium,Chennai,TShamsi,AGWharf,PRReiffel,270,271,SouthAfrica,0,1,Group
+AustraliaVsNewZealand,Australia,NewZealand,10/28/2023,27,HimachalPradeshCricketAssociationStadium,Dharamsala,TMHead,MErasmus,Sharfuddoula,388,383,Australia,5,0,Group
+NetherlandsVsBangladesh,Netherlands,Bangladesh,10/28/2023,28,EdenGardens,Kolkata,PAvanMeekeren,JSWilson,PWilson,229,142,Netherlands,87,0,Group
+IndiaVsEngland,India,England,10/29/2023,29,BharatRatnaShriAtalBihariVajpayeeEkanaCricketStadium,Lucknow,RGSharma,ATHoldstock,RJTucker,229,129,India,100,0,Group
+SriLankaVsAfghanistan,SriLanka,Afghanistan,10/30/2023,30,MaharashtraCricketAssociationStadium,Pune,FazalhaqFarooqi,CBGaffaney,RKIllingworth,241,242,Afghanistan,0,7,Group
+BangladeshVsPakistan,Bangladesh,Pakistan,10/31/2023,31,EdenGardens,Kolkata,FakharZaman,NitinMenon,RAKettleborough,204,206,Pakistan,0,7,Group
+SouthAfricaVsNewZealand,SouthAfrica,NewZealand,11/1/2023,32,MaharashtraCricketAssociationStadium,Pune,HEvanderDussen,AhsanRaza,HDPKDharmasena,357,167,SouthAfrica,190,0,Group
+IndiaVsSriLanka,India,SriLanka,11/2/2023,33,WankhedeStadium,Mumbai,MohammedShami,CMBrown,PRReiffel,357,55,India,302,0,Group
+NetherlandsVsAfghanistan,Netherlands,Afghanistan,11/3/2023,34,BharatRatnaShriAtalBihariVajpayeeEkanaCricketStadium,Lucknow,MohammadNabi,NitinMenon,Sharfuddoula,179,181,Afghanistan,0,7,Group
+NewZealandVsPakistan,NewZealand,Pakistan,11/4/2023,35,MChinnaswamyStadium,Bengaluru,FakharZaman,PWilson,RAKettleborough,401,200,Pakistan,21,0,Group
+AustraliaVsEngland,Australia,England,11/4/2023,36,NarendraModiStadium,Ahmedabad,AZampa,CBGaffaney,MErasmus,286,253,Australia,33,0,Group
+IndiaVsSouthAfrica,India,SouthAfrica,11/5/2023,37,EdenGardens,Kolkata,VKohli,HDPKDharmasena,PRReiffel,328,83,India,243,0,Group
+SriLankaVsBangladesh,SriLanka,Bangladesh,11/6/2023,38,ArunJaitleyStadium,Delhi,ShakibAlHasan,MErasmus,RKIllingworth,279,282,Bangladesh,0,3,Group
+AfghanistanVsAustralia,Afghanistan,Australia,11/7/2023,39,WankhedeStadium,Mumbai,GJMaxwell,AGWharf,MAGough,291,293,Australia,0,3,Group
+EnglandVsNetherlands,England,Netherlands,11/8/2023,40,MaharashtraCricketAssociationStadium,Pune,BAStokes,AhsanRaza,RJTucker,339,179,England,160,0,Group
+SriLankaVsNewZealand,SriLanka,NewZealand,11/9/2023,41,MChinnaswamyStadium,Bengaluru,TABoult,ATHoldstock,JSWilson,171,172,NewZealand,0,5,Group
+AfghanistanVsSouthAfrica,Afghanistan,SouthAfrica,11/10/2023,42,NarendraModiStadium,Ahmedabad,HEvanderDussen,CMBrown,NitinMenon,244,247,SouthAfrica,0,5,Group
+BangladeshVsAustralia,Bangladesh,Australia,11/11/2023,43,MaharashtraCricketAssociationStadium,Pune,MRMarsh,AhsanRaza,MErasmus,306,307,Australia,0,8,Group
+EnglandVsPakistan,England,Pakistan,11/11/2023,44,EdenGardens,Kolkata,DJWilley,PWilson,RJTucker,337,244,England,93,0,Group
+IndiaVsNetherlands,India,Netherlands,11/12/2023,45,MChinnaswamyStadium,Bengaluru,ShreyasIyer,MErasmus,RKIllingworth,410,250,India,160,0,Group
+IndiaVsNewZealand,India,NewZealand,11/15/2023,46,WankhedeStadium,Mumbai,MohammedShami,RKIllingworth,RJTucker,397,327,India,70,0,SemiFinal
+SouthAfricaVsAustralia,SouthAfrica,Australia,11/16/2023,47,EdenGardens,Kolkata,TMHead,NitinMenon,RAKettleborough,212,215,Australia,0,3,SemiFinal
+IndiaVsAustralia,India,Australia,11/19/2023,48,NarendraModiStadium,Ahmedabad,TMHead,RKIllingworth,RAKettleborough,240,241,Australia,0,6,Final

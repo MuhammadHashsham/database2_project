@@ -3,6 +3,7 @@
 Ontology Mapping and Data Analysis
 
 Project Overview
+
 This project involves the creation of an ontology to map the delivery statistics of the Cricket World Cup 2023. The process includes using RDFLib in Python to leverage CSV data and ontology definitions, generating Turtle (.ttl) files, and employing SPARQL queries to extract meaningful statistics from the World Cup delivery data.
 Project Components
 1.	Ontology Creation: An ontology has been designed to represent the domain-specific information related to delivery statistics in the Cricket World Cup 2023. The ontology provides a structured and standardized way of organizing and understanding the data.

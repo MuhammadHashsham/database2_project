@@ -1,0 +1,22 @@
+1.	Top 5 Batsmen with respect to their Average Runs Scored:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+
+SELECT ?player  (AVG(?totalRuns) AS ?battingAverage)
+WHERE {
+  ?delivery cricket:batsman ?player .
+  ?delivery cricket:runs ?runs .
+  
+  {
+    SELECT ?player ?match (SUM(?runs) AS ?totalRuns)
+    WHERE {
+      ?delivery cricket:batsman ?player .
+      ?delivery cricket:runs ?runs .
+      ?delivery cricket:match ?match.
+    }
+    GROUP BY ?player  ?match
+  }
+}
+GROUP BY ?player
+ORDER BY DESC(?battingAverage)
+LIMIT 5

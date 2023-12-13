@@ -1,0 +1,11 @@
+4.	Top 3 Players with Most Player of the Match Awards:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+
+SELECT ?player (COUNT(?match) AS ?awards)
+WHERE {
+  ?match cricket:player_of_the_match ?player .
+}
+GROUP BY ?player
+ORDER BY DESC(?awards)
+LIMIT 3

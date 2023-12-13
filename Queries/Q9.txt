@@ -1,0 +1,17 @@
+2.	Players who have scored the most runs in matches played at a specific venue:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+SELECT ?player ?playerName ?venue (SUM(?runs) AS ?totalRuns)
+WHERE {
+  ?delivery a cricket:Deliveries ;
+            cricket:batsman ?player ;
+            cricket:runs ?runs ;
+            cricket:match ?match .
+  ?player a cricket:Player ;
+          cricket:name ?playerName .
+  ?match a cricket:Match ;
+         cricket:venue ?venue .
+}
+GROUP BY ?player ?playerName ?venue
+ORDER BY DESC(?totalRuns)
+LIMIT 5

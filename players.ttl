@@ -1,0 +1,456 @@
+@prefix cricket: <http://cwnamespace.org/cricketOntology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cricket:Player_AAPAtkinson a cricket:Player ;
+    cricket:name "AAPAtkinson"^^xsd:string .
+
+cricket:Player_ADMathews a cricket:Player ;
+    cricket:name "ADMathews"^^xsd:string .
+
+cricket:Player_ADutt a cricket:Player ;
+    cricket:name "ADutt"^^xsd:string .
+
+cricket:Player_AKMarkram a cricket:Player ;
+    cricket:name "AKMarkram"^^xsd:string .
+
+cricket:Player_ALPhehlukwayo a cricket:Player ;
+    cricket:name "ALPhehlukwayo"^^xsd:string .
+
+cricket:Player_ATCarey a cricket:Player ;
+    cricket:name "ATCarey"^^xsd:string .
+
+cricket:Player_ATNidamanuru a cricket:Player ;
+    cricket:name "ATNidamanuru"^^xsd:string .
+
+cricket:Player_AURashid a cricket:Player ;
+    cricket:name "AURashid"^^xsd:string .
+
+cricket:Player_AZampa a cricket:Player ;
+    cricket:name "AZampa"^^xsd:string .
+
+cricket:Player_AbdullahShafique a cricket:Player ;
+    cricket:name "AbdullahShafique"^^xsd:string .
+
+cricket:Player_AghaSalman a cricket:Player ;
+    cricket:name "AghaSalman"^^xsd:string .
+
+cricket:Player_AzmatullahOmarzai a cricket:Player ;
+    cricket:name "AzmatullahOmarzai"^^xsd:string .
+
+cricket:Player_BAStokes a cricket:Player ;
+    cricket:name "BAStokes"^^xsd:string .
+
+cricket:Player_BFWdeLeede a cricket:Player ;
+    cricket:name "BFWdeLeede"^^xsd:string .
+
+cricket:Player_BKGMendis a cricket:Player ;
+    cricket:name "BKGMendis"^^xsd:string .
+
+cricket:Player_BabarAzam a cricket:Player ;
+    cricket:name "BabarAzam"^^xsd:string .
+
+cricket:Player_CAKRajitha a cricket:Player ;
+    cricket:name "CAKRajitha"^^xsd:string .
+
+cricket:Player_CBRLSKumara a cricket:Player ;
+    cricket:name "CBRLSKumara"^^xsd:string .
+
+cricket:Player_CGreen a cricket:Player ;
+    cricket:name "CGreen"^^xsd:string .
+
+cricket:Player_CKarunaratne a cricket:Player ;
+    cricket:name "CKarunaratne"^^xsd:string .
+
+cricket:Player_CNAckermann a cricket:Player ;
+    cricket:name "CNAckermann"^^xsd:string .
+
+cricket:Player_CRWoakes a cricket:Player ;
+    cricket:name "CRWoakes"^^xsd:string .
+
+cricket:Player_DAMiller a cricket:Player ;
+    cricket:name "DAMiller"^^xsd:string .
+
+cricket:Player_DAWarner a cricket:Player ;
+    cricket:name "DAWarner"^^xsd:string .
+
+cricket:Player_DJMalan a cricket:Player ;
+    cricket:name "DJMalan"^^xsd:string .
+
+cricket:Player_DJMitchell a cricket:Player ;
+    cricket:name "DJMitchell"^^xsd:string .
+
+cricket:Player_DJWilley a cricket:Player ;
+    cricket:name "DJWilley"^^xsd:string .
+
+cricket:Player_DMadushanka a cricket:Player ;
+    cricket:name "DMadushanka"^^xsd:string .
+
+cricket:Player_DMdeSilva a cricket:Player ;
+    cricket:name "DMdeSilva"^^xsd:string .
+
+cricket:Player_DNWellalage a cricket:Player ;
+    cricket:name "DNWellalage"^^xsd:string .
+
+cricket:Player_DPConway a cricket:Player ;
+    cricket:name "DPConway"^^xsd:string .
+
+cricket:Player_FDMKarunaratne a cricket:Player ;
+    cricket:name "FDMKarunaratne"^^xsd:string .
+
+cricket:Player_FakharZaman a cricket:Player ;
+    cricket:name "FakharZaman"^^xsd:string .
+
+cricket:Player_FazalhaqFarooqi a cricket:Player ;
+    cricket:name "FazalhaqFarooqi"^^xsd:string .
+
+cricket:Player_GCoetzee a cricket:Player ;
+    cricket:name "GCoetzee"^^xsd:string .
+
+cricket:Player_GDPhillips a cricket:Player ;
+    cricket:name "GDPhillips"^^xsd:string .
+
+cricket:Player_GJMaxwell a cricket:Player ;
+    cricket:name "GJMaxwell"^^xsd:string .
+
+cricket:Player_HCBrook a cricket:Player ;
+    cricket:name "HCBrook"^^xsd:string .
+
+cricket:Player_HEvanderDussen a cricket:Player ;
+    cricket:name "HEvanderDussen"^^xsd:string .
+
+cricket:Player_HHPandya a cricket:Player ;
+    cricket:name "HHPandya"^^xsd:string .
+
+cricket:Player_HKlaasen a cricket:Player ;
+    cricket:name "HKlaasen"^^xsd:string .
+
+cricket:Player_HarisRauf a cricket:Player ;
+    cricket:name "HarisRauf"^^xsd:string .
+
+cricket:Player_HasanAli a cricket:Player ;
+    cricket:name "HasanAli"^^xsd:string .
+
+cricket:Player_HasanMahmud a cricket:Player ;
+    cricket:name "HasanMahmud"^^xsd:string .
+
+cricket:Player_HashmatullahShahidi a cricket:Player ;
+    cricket:name "HashmatullahShahidi"^^xsd:string .
+
+cricket:Player_ISSodhi a cricket:Player ;
+    cricket:name "ISSodhi"^^xsd:string .
+
+cricket:Player_IbrahimZadran a cricket:Player ;
+    cricket:name "IbrahimZadran"^^xsd:string .
+
+cricket:Player_IftikharAhmed a cricket:Player ;
+    cricket:name "IftikharAhmed"^^xsd:string .
+
+cricket:Player_IkramAlikhil a cricket:Player ;
+    cricket:name "IkramAlikhil"^^xsd:string .
+
+cricket:Player_Imam-ul-Haq a cricket:Player ;
+    cricket:name "Imam-ul-Haq"^^xsd:string .
+
+cricket:Player_IshanKishan a cricket:Player ;
+    cricket:name "IshanKishan"^^xsd:string .
+
+cricket:Player_JCButtler a cricket:Player ;
+    cricket:name "JCButtler"^^xsd:string .
+
+cricket:Player_JDSNeesham a cricket:Player ;
+    cricket:name "JDSNeesham"^^xsd:string .
+
+cricket:Player_JERoot a cricket:Player ;
+    cricket:name "JERoot"^^xsd:string .
+
+cricket:Player_JJBumrah a cricket:Player ;
+    cricket:name "JJBumrah"^^xsd:string .
+
+cricket:Player_JMBairstow a cricket:Player ;
+    cricket:name "JMBairstow"^^xsd:string .
+
+cricket:Player_JPInglis a cricket:Player ;
+    cricket:name "JPInglis"^^xsd:string .
+
+cricket:Player_JRHazlewood a cricket:Player ;
+    cricket:name "JRHazlewood"^^xsd:string .
+
+cricket:Player_KAMaharaj a cricket:Player ;
+    cricket:name "KAMaharaj"^^xsd:string .
+
+cricket:Player_KICAsalanka a cricket:Player ;
+    cricket:name "KICAsalanka"^^xsd:string .
+
+cricket:Player_KLRahul a cricket:Player ;
+    cricket:name "KLRahul"^^xsd:string .
+
+cricket:Player_KRabada a cricket:Player ;
+    cricket:name "KRabada"^^xsd:string .
+
+cricket:Player_KSWilliamson a cricket:Player ;
+    cricket:name "KSWilliamson"^^xsd:string .
+
+cricket:Player_KuldeepYadav a cricket:Player ;
+    cricket:name "KuldeepYadav"^^xsd:string .
+
+cricket:Player_LBWilliams a cricket:Player ;
+    cricket:name "LBWilliams"^^xsd:string .
+
+cricket:Player_LHFerguson a cricket:Player ;
+    cricket:name "LHFerguson"^^xsd:string .
+
+cricket:Player_LNgidi a cricket:Player ;
+    cricket:name "LNgidi"^^xsd:string .
+
+cricket:Player_LSLivingstone a cricket:Player ;
+    cricket:name "LSLivingstone"^^xsd:string .
+
+cricket:Player_LVvanBeek a cricket:Player ;
+    cricket:name "LVvanBeek"^^xsd:string .
+
+cricket:Player_LitonDas a cricket:Player ;
+    cricket:name "LitonDas"^^xsd:string .
+
+cricket:Player_MADIHemantha a cricket:Player ;
+    cricket:name "MADIHemantha"^^xsd:string .
+
+cricket:Player_MAStarc a cricket:Player ;
+    cricket:name "MAStarc"^^xsd:string .
+
+cricket:Player_MAWood a cricket:Player ;
+    cricket:name "MAWood"^^xsd:string .
+
+cricket:Player_MDKJPerera a cricket:Player ;
+    cricket:name "MDKJPerera"^^xsd:string .
+
+cricket:Player_MDShanaka a cricket:Player ;
+    cricket:name "MDShanaka"^^xsd:string .
+
+cricket:Player_MJHenry a cricket:Player ;
+    cricket:name "MJHenry"^^xsd:string .
+
+cricket:Player_MJSantner a cricket:Player ;
+    cricket:name "MJSantner"^^xsd:string .
+
+cricket:Player_MJansen a cricket:Player ;
+    cricket:name "MJansen"^^xsd:string .
+
+cricket:Player_MLabuschagne a cricket:Player ;
+    cricket:name "MLabuschagne"^^xsd:string .
+
+cricket:Player_MMAli a cricket:Player ;
+    cricket:name "MMAli"^^xsd:string .
+
+<http://cwnamespace.org/cricketOntology#Player_MPO'Dowd> a cricket:Player ;
+    cricket:name "MPO'Dowd"^^xsd:string .
+
+cricket:Player_MPStoinis a cricket:Player ;
+    cricket:name "MPStoinis"^^xsd:string .
+
+cricket:Player_MPathirana a cricket:Player ;
+    cricket:name "MPathirana"^^xsd:string .
+
+cricket:Player_MRMarsh a cricket:Player ;
+    cricket:name "MRMarsh"^^xsd:string .
+
+cricket:Player_MSChapman a cricket:Player ;
+    cricket:name "MSChapman"^^xsd:string .
+
+cricket:Player_MTheekshana a cricket:Player ;
+    cricket:name "MTheekshana"^^xsd:string .
+
+cricket:Player_MahediHasan a cricket:Player ;
+    cricket:name "MahediHasan"^^xsd:string .
+
+cricket:Player_Mahmudullah a cricket:Player ;
+    cricket:name "Mahmudullah"^^xsd:string .
+
+cricket:Player_MehediHasanMiraz a cricket:Player ;
+    cricket:name "MehediHasanMiraz"^^xsd:string .
+
+cricket:Player_MohammadNabi a cricket:Player ;
+    cricket:name "MohammadNabi"^^xsd:string .
+
+cricket:Player_MohammadNawaz a cricket:Player ;
+    cricket:name "MohammadNawaz"^^xsd:string .
+
+cricket:Player_MohammadRizwan a cricket:Player ;
+    cricket:name "MohammadRizwan"^^xsd:string .
+
+cricket:Player_MohammadWasim a cricket:Player ;
+    cricket:name "MohammadWasim"^^xsd:string .
+
+cricket:Player_MohammedShami a cricket:Player ;
+    cricket:name "MohammedShami"^^xsd:string .
+
+cricket:Player_MohammedSiraj a cricket:Player ;
+    cricket:name "MohammedSiraj"^^xsd:string .
+
+cricket:Player_MujeebUrRahman a cricket:Player ;
+    cricket:name "MujeebUrRahman"^^xsd:string .
+
+cricket:Player_MushfiqurRahim a cricket:Player ;
+    cricket:name "MushfiqurRahim"^^xsd:string .
+
+cricket:Player_MustafizurRahman a cricket:Player ;
+    cricket:name "MustafizurRahman"^^xsd:string .
+
+cricket:Player_NajibullahZadran a cricket:Player ;
+    cricket:name "NajibullahZadran"^^xsd:string .
+
+cricket:Player_NasumAhmed a cricket:Player ;
+    cricket:name "NasumAhmed"^^xsd:string .
+
+cricket:Player_Naveen-ul-Haq a cricket:Player ;
+    cricket:name "Naveen-ul-Haq"^^xsd:string .
+
+cricket:Player_NazmulHossainShanto a cricket:Player ;
+    cricket:name "NazmulHossainShanto"^^xsd:string .
+
+cricket:Player_NoorAhmad a cricket:Player ;
+    cricket:name "NoorAhmad"^^xsd:string .
+
+cricket:Player_PAvanMeekeren a cricket:Player ;
+    cricket:name "PAvanMeekeren"^^xsd:string .
+
+cricket:Player_PJCummins a cricket:Player ;
+    cricket:name "PJCummins"^^xsd:string .
+
+cricket:Player_PNissanka a cricket:Player ;
+    cricket:name "PNissanka"^^xsd:string .
+
+cricket:Player_PVDChameera a cricket:Player ;
+    cricket:name "PVDChameera"^^xsd:string .
+
+cricket:Player_QdeKock a cricket:Player ;
+    cricket:name "QdeKock"^^xsd:string .
+
+cricket:Player_RAJadeja a cricket:Player ;
+    cricket:name "RAJadeja"^^xsd:string .
+
+cricket:Player_RAshwin a cricket:Player ;
+    cricket:name "RAshwin"^^xsd:string .
+
+cricket:Player_REvanderMerwe a cricket:Player ;
+    cricket:name "REvanderMerwe"^^xsd:string .
+
+cricket:Player_RGSharma a cricket:Player ;
+    cricket:name "RGSharma"^^xsd:string .
+
+cricket:Player_RJWTopley a cricket:Player ;
+    cricket:name "RJWTopley"^^xsd:string .
+
+cricket:Player_RKlein a cricket:Player ;
+    cricket:name "RKlein"^^xsd:string .
+
+cricket:Player_RRHendricks a cricket:Player ;
+    cricket:name "RRHendricks"^^xsd:string .
+
+cricket:Player_RRavindra a cricket:Player ;
+    cricket:name "RRavindra"^^xsd:string .
+
+cricket:Player_RahmanullahGurbaz a cricket:Player ;
+    cricket:name "RahmanullahGurbaz"^^xsd:string .
+
+cricket:Player_RahmatShah a cricket:Player ;
+    cricket:name "RahmatShah"^^xsd:string .
+
+cricket:Player_RashidKhan a cricket:Player ;
+    cricket:name "RashidKhan"^^xsd:string .
+
+cricket:Player_SAAbbott a cricket:Player ;
+    cricket:name "SAAbbott"^^xsd:string .
+
+cricket:Player_SAEdwards a cricket:Player ;
+    cricket:name "SAEdwards"^^xsd:string .
+
+cricket:Player_SAEngelbrecht a cricket:Player ;
+    cricket:name "SAEngelbrecht"^^xsd:string .
+
+cricket:Player_SAYadav a cricket:Player ;
+    cricket:name "SAYadav"^^xsd:string .
+
+cricket:Player_SMCurran a cricket:Player ;
+    cricket:name "SMCurran"^^xsd:string .
+
+cricket:Player_SNThakur a cricket:Player ;
+    cricket:name "SNThakur"^^xsd:string .
+
+cricket:Player_SPDSmith a cricket:Player ;
+    cricket:name "SPDSmith"^^xsd:string .
+
+cricket:Player_SSIyer a cricket:Player ;
+    cricket:name "SSIyer"^^xsd:string .
+
+cricket:Player_SSamarawickrama a cricket:Player ;
+    cricket:name "SSamarawickrama"^^xsd:string .
+
+cricket:Player_SaqibZulfiqar a cricket:Player ;
+    cricket:name "SaqibZulfiqar"^^xsd:string .
+
+cricket:Player_SaudShakeel a cricket:Player ;
+    cricket:name "SaudShakeel"^^xsd:string .
+
+cricket:Player_ShadabKhan a cricket:Player ;
+    cricket:name "ShadabKhan"^^xsd:string .
+
+cricket:Player_ShaheenShahAfridi a cricket:Player ;
+    cricket:name "ShaheenShahAfridi"^^xsd:string .
+
+cricket:Player_ShakibAlHasan a cricket:Player ;
+    cricket:name "ShakibAlHasan"^^xsd:string .
+
+cricket:Player_SharizAhmad a cricket:Player ;
+    cricket:name "SharizAhmad"^^xsd:string .
+
+cricket:Player_ShorifulIslam a cricket:Player ;
+    cricket:name "ShorifulIslam"^^xsd:string .
+
+cricket:Player_ShubmanGill a cricket:Player ;
+    cricket:name "ShubmanGill"^^xsd:string .
+
+cricket:Player_TABoult a cricket:Player ;
+    cricket:name "TABoult"^^xsd:string .
+
+cricket:Player_TBavuma a cricket:Player ;
+    cricket:name "TBavuma"^^xsd:string .
+
+cricket:Player_TGSouthee a cricket:Player ;
+    cricket:name "TGSouthee"^^xsd:string .
+
+cricket:Player_TMHead a cricket:Player ;
+    cricket:name "TMHead"^^xsd:string .
+
+cricket:Player_TShamsi a cricket:Player ;
+    cricket:name "TShamsi"^^xsd:string .
+
+cricket:Player_TWMLatham a cricket:Player ;
+    cricket:name "TWMLatham"^^xsd:string .
+
+cricket:Player_TanzidHasan a cricket:Player ;
+    cricket:name "TanzidHasan"^^xsd:string .
+
+cricket:Player_TanzimHasanSakib a cricket:Player ;
+    cricket:name "TanzimHasanSakib"^^xsd:string .
+
+cricket:Player_TaskinAhmed a cricket:Player ;
+    cricket:name "TaskinAhmed"^^xsd:string .
+
+cricket:Player_TowhidHridoy a cricket:Player ;
+    cricket:name "TowhidHridoy"^^xsd:string .
+
+cricket:Player_UsamaMir a cricket:Player ;
+    cricket:name "UsamaMir"^^xsd:string .
+
+cricket:Player_VKohli a cricket:Player ;
+    cricket:name "VKohli"^^xsd:string .
+
+cricket:Player_VikramjitSingh a cricket:Player ;
+    cricket:name "VikramjitSingh"^^xsd:string .
+
+cricket:Player_WAYoung a cricket:Player ;
+    cricket:name "WAYoung"^^xsd:string .
+
+cricket:Player_WBarresi a cricket:Player ;
+    cricket:name "WBarresi"^^xsd:string .
+

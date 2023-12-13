@@ -1,0 +1,23 @@
+2.	Average number of runs scored in a single match in each city:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+SELECT ?city (AVG(?totalRuns) AS ?averageRuns)
+WHERE {
+  ?match rdf:type cricket:Match.
+  ?match cricket:city ?city.
+  ?delivery rdf:type cricket:Deliveries.
+  ?delivery cricket:match ?match.
+  ?delivery cricket:runs ?runs.
+    {
+    SELECT  ?city(SUM(?runs) AS ?totalRuns)
+    WHERE {
+      ?match rdf:type cricket:Match.
+      ?match cricket:city ?city.
+      ?delivery rdf:type cricket:Deliveries.
+      ?delivery cricket:match ?match.
+      ?delivery cricket:runs ?runs.
+    }
+    GROUP BY ?player  ?match ?city
+  }
+}
+GROUP BY ?city

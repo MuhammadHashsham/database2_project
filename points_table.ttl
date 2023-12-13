@@ -1,0 +1,103 @@
+@prefix cricket: <http://cwnamespace.org/cricketOntology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cricket:Team_Afghanistan a cricket:Team ;
+    cricket:matches_lost "5"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "4"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "Afghanistan"^^xsd:string ;
+    cricket:team_net_run_rate -3.36e-01 ;
+    cricket:team_points "8"^^xsd:int ;
+    cricket:team_ranking "6"^^xsd:int .
+
+cricket:Team_Australia a cricket:Team ;
+    cricket:matches_lost "2"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "7"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "Australia"^^xsd:string ;
+    cricket:team_net_run_rate 8.41e-01 ;
+    cricket:team_points "14"^^xsd:int ;
+    cricket:team_ranking "3"^^xsd:int .
+
+cricket:Team_Bangladesh a cricket:Team ;
+    cricket:matches_lost "7"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "2"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "Bangladesh"^^xsd:string ;
+    cricket:team_net_run_rate -1.087e+00 ;
+    cricket:team_points "4"^^xsd:int ;
+    cricket:team_ranking "8"^^xsd:int .
+
+cricket:Team_England a cricket:Team ;
+    cricket:matches_lost "6"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "3"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "England"^^xsd:string ;
+    cricket:team_net_run_rate -5.72e-01 ;
+    cricket:team_points "6"^^xsd:int ;
+    cricket:team_ranking "7"^^xsd:int .
+
+cricket:Team_India a cricket:Team ;
+    cricket:matches_lost "0"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "9"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "India"^^xsd:string ;
+    cricket:team_net_run_rate 2.57e+00 ;
+    cricket:team_points "18"^^xsd:int ;
+    cricket:team_ranking "1"^^xsd:int .
+
+cricket:Team_Netherlands a cricket:Team ;
+    cricket:matches_lost "7"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "2"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "Netherlands"^^xsd:string ;
+    cricket:team_net_run_rate -1.825e+00 ;
+    cricket:team_points "4"^^xsd:int ;
+    cricket:team_ranking "10"^^xsd:int .
+
+cricket:Team_NewZealand a cricket:Team ;
+    cricket:matches_lost "4"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "5"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "NewZealand"^^xsd:string ;
+    cricket:team_net_run_rate 7.43e-01 ;
+    cricket:team_points "10"^^xsd:int ;
+    cricket:team_ranking "4"^^xsd:int .
+
+cricket:Team_Pakistan a cricket:Team ;
+    cricket:matches_lost "5"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "4"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "Pakistan"^^xsd:string ;
+    cricket:team_net_run_rate -1.99e-01 ;
+    cricket:team_points "8"^^xsd:int ;
+    cricket:team_ranking "5"^^xsd:int .
+
+cricket:Team_SouthAfrica a cricket:Team ;
+    cricket:matches_lost "2"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "7"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "SouthAfrica"^^xsd:string ;
+    cricket:team_net_run_rate 1.261e+00 ;
+    cricket:team_points "14"^^xsd:int ;
+    cricket:team_ranking "2"^^xsd:int .
+
+cricket:Team_SriLanka a cricket:Team ;
+    cricket:matches_lost "7"^^xsd:int ;
+    cricket:matches_played "9"^^xsd:int ;
+    cricket:matches_won "2"^^xsd:int ;
+    cricket:no_result "0"^^xsd:int ;
+    cricket:team_name "SriLanka"^^xsd:string ;
+    cricket:team_net_run_rate -1.419e+00 ;
+    cricket:team_points "4"^^xsd:int ;
+    cricket:team_ranking "9"^^xsd:int .
+

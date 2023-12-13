@@ -1,0 +1,14 @@
+6.	Top 5 Wicket Takers
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+SELECT ?bowler (COUNT(?wicket) AS ?wickets)
+WHERE {
+  ?delivery rdf:type cricket:Deliveries ;
+            cricket:bowler ?bowler ;
+            cricket:wicket_type ?wicket .
+
+  FILTER (BOUND(?wicket) && ?wicket in ("caught","bowled","lbw","stumped","caughtandbowled"))
+}
+GROUP BY ?bowler
+ORDER BY DESC(?wickets)
+LIMIT 10

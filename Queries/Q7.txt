@@ -1,0 +1,14 @@
+7.	Team with the highest total runs across all matches while batting first:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+SELECT ?team (SUM(?runs) AS ?totalRuns)
+WHERE {
+   ?match rdf:type cricket:Match.
+   ?match cricket:team1 ?team.
+   ?delivery rdf:type cricket:Deliveries.
+   ?delivery cricket:match ?match.
+   ?delivery cricket:runs ?runs.
+}
+GROUP BY ?team
+ORDER BY DESC(?totalRuns)
+LIMIT 1

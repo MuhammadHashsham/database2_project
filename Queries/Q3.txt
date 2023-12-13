@@ -1,0 +1,19 @@
+3.	Find the player who scored the most runs in a single match:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+
+SELECT ?player_name ?match_name (SUM(?runs) AS ?totalRuns)
+WHERE {
+  ?delivery a cricket:Deliveries ;
+            cricket:match ?match ;
+            cricket:batsman ?player ;
+            cricket:runs ?runs .
+  	?player a cricket:Player ;
+            cricket:name ?player_name .
+    ?match a cricket:Match ;
+            cricket:match_name ?match_name ;
+
+}
+GROUP BY ?match ?player ?match_name ?player_name
+ORDER BY DESC(?totalRuns)
+LIMIT 1

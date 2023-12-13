@@ -1,0 +1,14 @@
+5.	Top 3 highest total runs scored in each match:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+
+SELECT ?Match (MAX(?totalRuns) AS ?highestTotalRuns)
+WHERE {
+  ?match cricket:match_name ?Match .
+  ?match cricket:first_inning_score ?runs1 .
+  ?match cricket:second_inning_score ?runs2 .
+  BIND(?runs1 + ?runs2 AS ?totalRuns)
+}
+GROUP BY ?Match
+ORDER BY DESC(?highestTotalRuns)
+LIMIT 3

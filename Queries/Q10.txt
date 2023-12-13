@@ -1,0 +1,9 @@
+10.	Query for Matches and Their Umpires:
+
+SELECT ?match ?matchName ?umpire1 ?umpire2
+WHERE {
+    ?match a cricket:Match .
+    ?match cricket:match_name ?matchName .
+    ?match cricket:umpire1 ?umpire1 .
+    ?match cricket:umpire2 ?umpire2 .
+}

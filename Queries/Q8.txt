@@ -1,0 +1,27 @@
+1.	Top 5 Players who have scored a century in the most number of matches:
+
+PREFIX cricket: <http://cwnamespace.org/cricketOntology#>
+SELECT ?player_name (COUNT(DISTINCT ?match) AS ?Centuries)
+WHERE {
+  ?delivery a cricket:Deliveries ;
+            cricket:match ?match ;
+            cricket:batsman ?player ;
+            cricket:runs ?runs .
+  ?player a cricket:Player ;
+          cricket:name ?player_name .
+
+  {
+    SELECT ?player ?match (SUM(?runs) AS ?totalRuns)
+    WHERE {
+      ?delivery a cricket:Deliveries ;
+                cricket:match ?match ;
+                cricket:batsman ?player ;
+                cricket:runs ?runs .
+    }
+    GROUP BY ?player ?match
+    HAVING (?totalRuns >= 100)
+  }
+}
+GROUP BY ?player ?player_name
+ORDER BY DESC(?Centuries)
+LIMIT 5
